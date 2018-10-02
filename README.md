@@ -10,7 +10,20 @@
     login: admin
     password: 123edsaqw
 
+Прямые ссылки
      
 <a href="https://testyii.gq/" target="_blank">
         Тестовый домен
+</a>
+<br />
+<a href="https://testyii.gq/user/login" target="_blank">
+        Авторизация
+</a>
+<br />
+<a href="https://testyii.gq/user/register" target="_blank">
+        Регистрация
+</a>
+<br />
+<a href="https://testyii.gq/user/admin/index" target="_blank">
+        Управление пользователями
 </a>
