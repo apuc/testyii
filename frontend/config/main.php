@@ -17,27 +17,9 @@ return [
             'clients' => [
                 'vkontakte' => [
                     'class'        => 'dektrium\user\clients\VKontakte',
-                    'clientId'     => '5729753',
-                    'clientSecret' => 'QISu2sOlCH7KKwHFuXeY',
+                    'clientId'     => '6709009',
+                    'clientSecret' => '5tURP2Eo6jTz0faVMPJx',
                     'title' => '',
-                ],
-                'facebook' => [
-                    'class'        => 'dektrium\user\clients\Facebook',
-                    'clientId'     => '149642232489195',
-                    'clientSecret' => 'ea5ff5e69311c24acee5cbd2ac557a69',
-                    'title' => '',
-                ],
-                'twitter' => [
-                    'class'          => 'dektrium\user\clients\Twitter',
-                    'consumerKey'    => 'kMykWSokfmYUhNwCuRTAPQUpO',
-                    'consumerSecret' => 'vvAFL8lpYugctQ5IiRV5ohGNXs7ojK0IAZNCDTJiodZPNciY2M',
-                    'title'          => '',
-                ],
-                'google' => [
-                    'class'        => 'dektrium\user\clients\Google',
-                    'clientId'     => '153414607886-k1ddcest7dkg37fjvg8a3m0d2c0plmkk.apps.googleusercontent.com',
-                    'clientSecret' => 'hHKvstkOUgHmfzazEsETTSxk',
-                    'title'          => '',
                 ],
             ],
         ],
