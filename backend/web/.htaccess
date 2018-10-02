@@ -1,0 +1,24 @@
+# ���� ��� ����� ��� ����, ��������� ���
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+# � ��������� ������ �������������� �� index.php
+#RewriteRule . index.php
+
+Options +SymLinksIfOwnerMatch
+IndexIgnore /
+
+RewriteEngine on
+#RewriteBase /
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+RewriteCond %{HTTP_HOST} ^www.da-info.pro$ [NC]
+RewriteRule ^(.*)$ https://da-info.pro/$1 [R=301,L]
+
+RewriteCond %{HTTPS} on
+RewriteRule ^(.*)$ https://da-info.pro/$1 [R=301,L]
