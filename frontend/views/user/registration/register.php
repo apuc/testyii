@@ -9,6 +9,7 @@
  * file that was distributed with this source code.
  */
 
+use dektrium\user\widgets\Connect;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -54,5 +55,9 @@ $this->params['breadcrumbs'][] = $this->title;
         <p class="text-center">
             <?= Html::a(Yii::t('user', 'Already registered? Sign in!'), ['/user/security/login']) ?>
         </p>
+
+        <?= Connect::widget([
+            'baseAuthUrl' => ['/user/security/auth'],
+        ]) ?>
     </div>
 </div>
