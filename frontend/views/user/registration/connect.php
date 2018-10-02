@@ -41,6 +41,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     'id' => 'connect-account-form',
                 ]); ?>
 
+                <?= $form->field($model, 'type_profile')->radioList($model->types); ?>
+
                 <?= $form->field($model, 'email') ?>
 
                 <?= $form->field($model, 'username') ?>
